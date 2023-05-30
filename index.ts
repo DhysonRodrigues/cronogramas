@@ -1,16 +1,13 @@
-import { AppDataSource } from "./src/databases/data-source"
+import { AppDataSource } from "./src/databases/connections/data-source"
 
-const express =  require("express")
-
-const app = express ()
-
+const express = require("express")
+const app = express()
 app.use(express.json())
 
-app.get("/",(request,response)=>{
-    return response.json("lasqueira")
+app.get("/", (request, response) => {
+  return response.json("E aí, suave?")
 })
 
-app.listen(3333, () => console.log("Saul devolve meu dinheiro")
-)
+app.listen(3333, () => console.log("O server tá ON na porta 3333."))
 
 AppDataSource.initialize()

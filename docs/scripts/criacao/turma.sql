@@ -5,5 +5,5 @@ CREATE TABLE Turma (
 	datainicio VARCHAR NOT NULL,
 	dataFim DATE,
 	horasAulaDia INT,
-	fkcurso VARCHAR REFERENCES cursos(idCurso)
+	fkcurso VARCHAR REFERENCES cursos (idCurso)
 );
