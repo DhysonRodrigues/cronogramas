@@ -1,24 +1,24 @@
 {
-    "compilerOptions": {
-      "target": "ES2018",
-      "lib": ["es5", "es6", "ES2018"],
-      "module": "CommonJS",
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
-      "allowJs": true,
-      "moduleResolution": "node",
-      "resolveJsonModule": true,
-      "noImplicitAny": false,
-      "outDir": "build",
-      "rootDir": "src",
-      "paths": {
-        "@controllers":["./src/controllers/*"],
-        "@connections":["./src/database/connections/*"],
-        "@models":["./src/database/models/*"],
-        "@services":["./src/services/*"],
-        "@routes":["./src/routes/*"]
-      }
-    },
-    "compileOnSave": true,
-    "include": ["src"]
-  }
+  "compilerOptions": {
+    "target": "ES2018",
+    "lib": ["es5", "es6", "ES2018"],
+    "module": "CommonJS",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "outDir": "build",
+    "rootDir": "src",
+    "paths":{
+      "@controllers": ["./src/controllers/*"],
+      "@connections": ["./src/databases/connections/*"],
+      "@models": ["./src/databases/models/*"],
+      "@routes": ["./src/routes/*"],
+      "@services": ["./src/services/*"]
+    }
+  },
+  "compileOnSave": true,
+  "include": ["src"]
+}
