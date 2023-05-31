@@ -10,7 +10,14 @@
       "resolveJsonModule": true,
       "noImplicitAny": false,
       "outDir": "build",
-      "rootDir": "src"
+      "rootDir": "src",
+      "paths": {
+        "@controllers":["./src/controllers/*"],
+        "@connections":["./src/database/connections/*"],
+        "@models":["./src/database/models/*"],
+        "@services":["./src/services/*"],
+        "@routes":["./src/routes/*"]
+      }
     },
     "compileOnSave": true,
     "include": ["src"]
