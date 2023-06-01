@@ -1,25 +1,27 @@
-import { Entity, PrimaryColumn,Column } from "typeorm"
-import {v4 as uuid} from "uuid"
+import { Entity, PrimaryColumn, Column } from "typeorm"
+import { v4 as uuid } from "uuid"
 
-//chave primaria 
 @Entity("turma")
-export default class turma{
-    @PrimaryColumn()
-    id_turma:string
-// chave estrangeira
-@Column()
-    fk_curso: string
-// atributos
-@Column({nullable : true})
-    data_inicio : Date
+export default class turma {
+  //Chave Primaria
+  @PrimaryColumn()
+  id_turma: string
 
-@Column({nullable : true})
-    data_fim : Date
+  //chave estrangeira
+  @Column()
+  fk_curso: string
 
-@Column({nullable : true})
-    horas_auladia: number
+  // Atributos
+  @Column({ nullable: true })
+  data_inicio: Date
 
-constructor(){
-    this.id_turma=uuid()
-}
+  @Column({ nullable: true })
+  data_fim: Date
+
+  @Column({ nullable: true })
+  horas_aula_dia: Number
+
+  constructor() {
+    this.id_turma = uuid()
+  }
 }
